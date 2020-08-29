@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1090376729182-e02tjohcqp709fh5n3eqcq405bff31dr.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://dietplanningbuddy.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1090376729182</string>
+    <string name="google_api_key" translatable="false">AIzaSyBXnlgiY-iiYZwA7yReOcI4_TbjbhS2DCY</string>
+    <string name="google_app_id" translatable="false">1:1090376729182:android:a84b421dc3cf5494f06acf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBXnlgiY-iiYZwA7yReOcI4_TbjbhS2DCY</string>
+    <string name="google_storage_bucket" translatable="false">dietplanningbuddy.appspot.com</string>
+    <string name="project_id" translatable="false">dietplanningbuddy</string>
+</resources>

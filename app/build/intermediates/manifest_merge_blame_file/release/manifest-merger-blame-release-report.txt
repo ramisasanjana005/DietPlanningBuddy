@@ -1,0 +1,695 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.dietplanningbuddy"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:5:5-7:35
+12        android:name="android.hardware.camera"
+12-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:6:9-47
+13        android:required="true" />
+13-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:7:9-32
+14
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:9:5-65
+15-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:9:22-62
+16    <uses-permission android:name="android.hardware.camera" />
+16-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:10:5-63
+16-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:10:22-60
+17    <uses-permission android:name="android.hardware.camera.autofocus" />
+17-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:11:5-73
+17-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:11:22-70
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:12:5-81
+18-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:13:5-67
+19-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:13:22-64
+20
+21    <uses-feature
+21-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:27:5-29:36
+22        android:name="android.hardware.camera.front"
+22-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:28:9-53
+23        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+23-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:29:9-33
+24    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+25    <uses-feature
+25-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:32:5-34:36
+26        android:name="android.hardware.camera.autofocus"
+26-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:33:9-57
+27        android:required="false" />
+27-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:34:9-33
+28    <uses-feature
+28-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:35:5-37:36
+29        android:name="android.hardware.camera.flash"
+29-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:36:9-53
+30        android:required="false" />
+30-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:37:9-33
+31    <uses-feature
+31-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:38:5-40:36
+32        android:name="android.hardware.screen.landscape"
+32-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:39:9-57
+33        android:required="false" />
+33-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:40:9-33
+34    <uses-feature
+34-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:41:5-43:36
+35        android:name="android.hardware.wifi"
+35-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:42:9-45
+36        android:required="false" />
+36-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:43:9-33
+37
+38    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+38-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\3838fa066decd5d47eec7bd5d4f2a46d\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:23:5-79
+38-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\3838fa066decd5d47eec7bd5d4f2a46d\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:23:22-76
+39    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+39-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\3838fa066decd5d47eec7bd5d4f2a46d\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:24:5-68
+39-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\3838fa066decd5d47eec7bd5d4f2a46d\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:24:22-65
+40    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+40-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+40-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+41-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:26:5-110
+41-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:26:22-107
+42
+43    <application
+43-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:16:5-277:19
+44        android:allowBackup="true"
+44-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:17:9-35
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.1.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\f961a727fd6ff1bec6d760c391cc6822\core-1.1.0\AndroidManifest.xml:24:18-86
+46        android:icon="@mipmap/ic_launcher"
+46-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:18:9-43
+47        android:label="DietPlanningBuddy"
+47-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:19:9-42
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:20:9-54
+49        android:supportsRtl="true"
+49-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:21:9-35
+50        android:theme="@style/AppTheme" >
+50-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:22:9-40
+51        <activity android:name="com.example.dietplanningbuddy.MainActivity" >
+51-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:24:9-29:20
+51-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:24:19-47
+52            <intent-filter>
+52-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:25:13-28:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:26:17-69
+53-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:26:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:27:17-77
+55-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:27:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity android:name="com.example.dietplanningbuddy.googleSigninActivity" />
+58-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:30:9-58
+58-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:30:19-55
+59        <activity android:name="com.example.dietplanningbuddy.SigninupActivity" />
+59-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:32:9-54
+59-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:32:19-51
+60        <activity
+60-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:34:9-40:20
+61            android:name="com.example.dietplanningbuddy.Bmi"
+61-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:35:13-32
+62            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+62-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:36:13-84
+63            <meta-data
+63-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+64                android:name="android.support.PARENT_ACTIVITY"
+64-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+65                android:value="com.example.dietplanningbuddy.MainActivity" />
+65-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+66        </activity>
+67        <activity
+67-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:43:9-49:20
+68            android:name="com.example.dietplanningbuddy.Calculate"
+68-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:44:13-38
+69            android:parentActivityName="com.example.dietplanningbuddy.Bmi" >
+69-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:45:13-75
+70            <meta-data
+70-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+71                android:name="android.support.PARENT_ACTIVITY"
+71-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+72                android:value="com.example.dietplanningbuddy.Bmi" />
+72-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+73        </activity>
+74        <activity
+74-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:52:9-58:20
+75            android:name="com.example.dietplanningbuddy.dietplan"
+75-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:53:13-37
+76            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+76-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:54:13-84
+77            <meta-data
+77-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+78                android:name="android.support.PARENT_ACTIVITY"
+78-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+79                android:value="com.example.dietplanningbuddy.MainActivity" />
+79-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+80        </activity>
+81        <activity
+81-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:61:9-67:20
+82            android:name="com.example.dietplanningbuddy.underweightPlan"
+82-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:62:13-44
+83            android:parentActivityName="com.example.dietplanningbuddy.dietplan" >
+83-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:63:13-80
+84            <meta-data
+84-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+85                android:name="android.support.PARENT_ACTIVITY"
+85-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+86                android:value="com.example.dietplanningbuddy.dietplan" />
+86-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+87        </activity>
+88        <activity
+88-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:70:9-76:20
+89            android:name="com.example.dietplanningbuddy.normalweightPlan"
+89-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:71:13-45
+90            android:parentActivityName="com.example.dietplanningbuddy.dietplan" >
+90-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:72:13-80
+91            <meta-data
+91-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+92                android:name="android.support.PARENT_ACTIVITY"
+92-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+93                android:value="com.example.dietplanningbuddy.dietplan" />
+93-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+94        </activity>
+95        <activity
+95-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:79:9-85:20
+96            android:name="com.example.dietplanningbuddy.overweightPlan"
+96-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:80:13-43
+97            android:parentActivityName="com.example.dietplanningbuddy.dietplan" >
+97-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:81:13-80
+98            <meta-data
+98-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+99                android:name="android.support.PARENT_ACTIVITY"
+99-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+100                android:value="com.example.dietplanningbuddy.dietplan" />
+100-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+101        </activity>
+102        <activity
+102-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:88:9-94:20
+103            android:name="com.example.dietplanningbuddy.RemindersActivity"
+103-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:89:13-46
+104            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+104-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:90:13-84
+105            <meta-data
+105-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+106                android:name="android.support.PARENT_ACTIVITY"
+106-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+107                android:value="com.example.dietplanningbuddy.MainActivity" />
+107-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+108        </activity>
+109        <activity
+109-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:97:9-103:20
+110            android:name="com.example.dietplanningbuddy.foodcodescanner"
+110-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:98:13-44
+111            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+111-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:99:13-84
+112            <meta-data
+112-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+113                android:name="android.support.PARENT_ACTIVITY"
+113-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+114                android:value="com.example.dietplanningbuddy.MainActivity" />
+114-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+115        </activity>
+116        <activity
+116-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:105:9-110:20
+117            android:name="com.example.dietplanningbuddy.d1Underweight"
+117-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:105:19-48
+118            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+118-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:106:13-84
+119            <meta-data
+119-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+120                android:name="android.support.PARENT_ACTIVITY"
+120-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+121                android:value="com.example.dietplanningbuddy.MainActivity" />
+121-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+122        </activity>
+123        <activity
+123-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:112:9-117:20
+124            android:name="com.example.dietplanningbuddy.d2Underweight"
+124-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:112:19-48
+125            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+125-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:113:13-84
+126            <meta-data
+126-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+127                android:name="android.support.PARENT_ACTIVITY"
+127-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+128                android:value="com.example.dietplanningbuddy.MainActivity" />
+128-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+129        </activity>
+130        <activity
+130-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:119:9-124:20
+131            android:name="com.example.dietplanningbuddy.d3Underweight"
+131-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:119:19-48
+132            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+132-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:120:13-84
+133            <meta-data
+133-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+134                android:name="android.support.PARENT_ACTIVITY"
+134-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+135                android:value="com.example.dietplanningbuddy.MainActivity" />
+135-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+136        </activity>
+137        <activity
+137-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:126:9-131:20
+138            android:name="com.example.dietplanningbuddy.d4Underweight"
+138-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:126:19-48
+139            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+139-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:127:13-84
+140            <meta-data
+140-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+141                android:name="android.support.PARENT_ACTIVITY"
+141-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+142                android:value="com.example.dietplanningbuddy.MainActivity" />
+142-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+143        </activity>
+144        <activity
+144-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:134:9-139:20
+145            android:name="com.example.dietplanningbuddy.d5Underweight"
+145-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:134:19-48
+146            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+146-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:135:13-84
+147            <meta-data
+147-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+148                android:name="android.support.PARENT_ACTIVITY"
+148-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+149                android:value="com.example.dietplanningbuddy.MainActivity" />
+149-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+150        </activity>
+151        <activity
+151-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:142:9-147:20
+152            android:name="com.example.dietplanningbuddy.d6Underweight"
+152-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:142:19-48
+153            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+153-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:143:13-84
+154            <meta-data
+154-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+155                android:name="android.support.PARENT_ACTIVITY"
+155-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+156                android:value="com.example.dietplanningbuddy.MainActivity" />
+156-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+157        </activity>
+158        <activity
+158-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:149:9-154:20
+159            android:name="com.example.dietplanningbuddy.d7Underweight"
+159-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:149:19-48
+160            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+160-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:150:13-84
+161            <meta-data
+161-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+162                android:name="android.support.PARENT_ACTIVITY"
+162-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+163                android:value="com.example.dietplanningbuddy.MainActivity" />
+163-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+164        </activity>
+165        <activity
+165-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:156:9-161:20
+166            android:name="com.example.dietplanningbuddy.d1Normalweight"
+166-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:156:19-49
+167            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+167-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:157:13-84
+168            <meta-data
+168-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+169                android:name="android.support.PARENT_ACTIVITY"
+169-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+170                android:value="com.example.dietplanningbuddy.MainActivity" />
+170-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+171        </activity>
+172        <activity
+172-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:164:9-169:20
+173            android:name="com.example.dietplanningbuddy.d2Normalweight"
+173-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:164:19-49
+174            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+174-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:165:13-84
+175            <meta-data
+175-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+176                android:name="android.support.PARENT_ACTIVITY"
+176-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+177                android:value="com.example.dietplanningbuddy.MainActivity" />
+177-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+178        </activity>
+179        <activity
+179-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:170:9-175:20
+180            android:name="com.example.dietplanningbuddy.d3Normalweight"
+180-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:170:19-49
+181            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+181-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:171:13-84
+182            <meta-data
+182-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+183                android:name="android.support.PARENT_ACTIVITY"
+183-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+184                android:value="com.example.dietplanningbuddy.MainActivity" />
+184-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+185        </activity>
+186        <activity
+186-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:176:9-181:20
+187            android:name="com.example.dietplanningbuddy.d4Normalweight"
+187-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:176:19-49
+188            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+188-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:177:13-84
+189            <meta-data
+189-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+190                android:name="android.support.PARENT_ACTIVITY"
+190-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+191                android:value="com.example.dietplanningbuddy.MainActivity" />
+191-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+192        </activity>
+193        <activity
+193-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:182:9-187:20
+194            android:name="com.example.dietplanningbuddy.d5Normalweight"
+194-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:182:19-49
+195            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+195-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:183:13-84
+196            <meta-data
+196-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+197                android:name="android.support.PARENT_ACTIVITY"
+197-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+198                android:value="com.example.dietplanningbuddy.MainActivity" />
+198-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+199        </activity>
+200        <activity
+200-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:188:9-193:20
+201            android:name="com.example.dietplanningbuddy.d6Normalweight"
+201-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:188:19-49
+202            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+202-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:189:13-84
+203            <meta-data
+203-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+204                android:name="android.support.PARENT_ACTIVITY"
+204-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+205                android:value="com.example.dietplanningbuddy.MainActivity" />
+205-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+206        </activity>
+207        <activity
+207-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:196:9-201:20
+208            android:name="com.example.dietplanningbuddy.d7Normalweight"
+208-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:196:19-49
+209            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+209-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:197:13-84
+210            <meta-data
+210-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+211                android:name="android.support.PARENT_ACTIVITY"
+211-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+212                android:value="com.example.dietplanningbuddy.MainActivity" />
+212-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+213        </activity>
+214        <activity
+214-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:204:9-209:20
+215            android:name="com.example.dietplanningbuddy.d1Overweight"
+215-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:204:19-47
+216            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+216-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:205:13-84
+217            <meta-data
+217-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+218                android:name="android.support.PARENT_ACTIVITY"
+218-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+219                android:value="com.example.dietplanningbuddy.MainActivity" />
+219-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+220        </activity>
+221        <activity
+221-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:212:9-217:20
+222            android:name="com.example.dietplanningbuddy.d2Overweight"
+222-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:212:19-47
+223            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+223-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:213:13-84
+224            <meta-data
+224-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+225                android:name="android.support.PARENT_ACTIVITY"
+225-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+226                android:value="com.example.dietplanningbuddy.MainActivity" />
+226-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+227        </activity>
+228        <activity
+228-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:220:9-225:20
+229            android:name="com.example.dietplanningbuddy.d3Overweight"
+229-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:220:19-47
+230            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+230-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:221:13-84
+231            <meta-data
+231-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+232                android:name="android.support.PARENT_ACTIVITY"
+232-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+233                android:value="com.example.dietplanningbuddy.MainActivity" />
+233-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+234        </activity>
+235        <activity
+235-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:228:9-233:20
+236            android:name="com.example.dietplanningbuddy.d4Overweight"
+236-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:228:19-47
+237            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+237-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:229:13-84
+238            <meta-data
+238-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+239                android:name="android.support.PARENT_ACTIVITY"
+239-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+240                android:value="com.example.dietplanningbuddy.MainActivity" />
+240-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+241        </activity>
+242        <activity
+242-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:236:9-241:20
+243            android:name="com.example.dietplanningbuddy.d5Overweight"
+243-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:236:19-47
+244            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+244-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:237:13-84
+245            <meta-data
+245-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+246                android:name="android.support.PARENT_ACTIVITY"
+246-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+247                android:value="com.example.dietplanningbuddy.MainActivity" />
+247-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+248        </activity>
+249        <activity
+249-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:244:9-249:20
+250            android:name="com.example.dietplanningbuddy.d6Overweight"
+250-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:244:19-47
+251            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+251-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:245:13-84
+252            <meta-data
+252-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+253                android:name="android.support.PARENT_ACTIVITY"
+253-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+254                android:value="com.example.dietplanningbuddy.MainActivity" />
+254-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+255        </activity>
+256        <activity
+256-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:251:9-256:20
+257            android:name="com.example.dietplanningbuddy.d7Overweight"
+257-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:251:19-47
+258            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+258-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:252:13-84
+259            <meta-data
+259-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:37:13-39:78
+260                android:name="android.support.PARENT_ACTIVITY"
+260-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:38:17-63
+261                android:value="com.example.dietplanningbuddy.MainActivity" />
+261-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:39:17-75
+262        </activity>
+263        <activity android:name="com.example.dietplanningbuddy.ReaderActivity" >
+263-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:258:9-264:20
+263-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:258:19-49
+264            <intent-filter>
+264-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:259:13-263:29
+265                <action android:name="android.intent.action.RUN" />
+265-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:260:17-68
+265-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:260:25-65
+266
+267                <category android:name="android.intent.category.DEFAULT" />
+267-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:262:17-76
+267-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:262:27-73
+268            </intent-filter>
+269        </activity>
+270        <activity android:name="com.example.dietplanningbuddy.GeneratorActivity" />
+270-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:266:9-64
+270-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:266:19-52
+271        <activity android:name="com.example.dietplanningbuddy.searchRecipes" >
+271-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:268:9-274:20
+271-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:268:19-48
+272            <intent-filter>
+272-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:25:13-28:29
+273                <action android:name="android.intent.action.MAIN" />
+273-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:26:17-69
+273-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:26:25-66
+274
+275                <category android:name="android.intent.category.LAUNCHER" />
+275-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:27:17-77
+275-->G:\Spring'20\CSE491\DietPlanningBuddy\app\src\main\AndroidManifest.xml:27:27-74
+276            </intent-filter>
+277        </activity>
+278        <activity
+278-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:46:9-52:63
+279            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+279-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:47:13-74
+280            android:clearTaskOnLaunch="true"
+280-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:48:13-45
+281            android:screenOrientation="sensorLandscape"
+281-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:49:13-56
+282            android:stateNotNeeded="true"
+282-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:50:13-42
+283            android:theme="@style/zxing_CaptureTheme"
+283-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:51:13-54
+284            android:windowSoftInputMode="stateAlwaysHidden" />
+284-->[com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\84b2b75a244f3aa25b7085a42e7072c4\jetified-zxing-android-embedded-3.5.0\AndroidManifest.xml:52:13-60
+285        <activity
+285-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:24:9-31:50
+286            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+286-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:25:13-85
+287            android:excludeFromRecents="true"
+287-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:26:13-46
+288            android:exported="true"
+288-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:27:13-36
+289            android:launchMode="singleTask"
+289-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:28:13-44
+290            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+290-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:29:13-102
+291            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+291-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:30:13-72
+292
+293        <service
+293-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:33:9-39:19
+294            android:name="com.google.firebase.components.ComponentDiscoveryService"
+294-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:34:13-84
+295            android:directBootAware="true"
+295-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+296            android:exported="false" >
+296-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:35:13-37
+297            <meta-data
+297-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:36:13-38:85
+298                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+298-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:37:17-109
+299                android:value="com.google.firebase.components.ComponentRegistrar" />
+299-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\dfe7b3659c61d92bbc3815d5264c7c0d\jetified-firebase-auth-19.3.0\AndroidManifest.xml:38:17-82
+300            <meta-data
+300-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\3838fa066decd5d47eec7bd5d4f2a46d\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:30:13-32:85
+301                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+301-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\3838fa066decd5d47eec7bd5d4f2a46d\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:31:17-139
+302                android:value="com.google.firebase.components.ComponentRegistrar" />
+302-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\3838fa066decd5d47eec7bd5d4f2a46d\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:32:17-82
+303            <meta-data
+303-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+304                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+304-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+305                android:value="com.google.firebase.components.ComponentRegistrar" />
+305-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+306        </service>
+307
+308        <activity
+308-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+309            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+309-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+310            android:excludeFromRecents="true"
+310-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+311            android:exported="false"
+311-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+312            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+312-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+313        <!--
+314            Service handling Google Sign-In user revocation. For apps that do not integrate with
+315            Google Sign-In, this service will never be started.
+316        -->
+317        <service
+317-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+318            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+318-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+319            android:exported="true"
+319-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+320            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+320-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\5becd67d34fcbceea29c723da507aed6\jetified-play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+321
+322        <receiver
+322-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+323            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+323-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+324            android:exported="true"
+324-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+325            android:permission="com.google.android.c2dm.permission.SEND" >
+325-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+326            <intent-filter>
+326-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+327                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+327-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+327-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+328            </intent-filter>
+329        </receiver>
+330
+331        <activity
+331-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\d515fa0142795af05e3369fe0848cba8\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+332            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+332-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\d515fa0142795af05e3369fe0848cba8\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+333            android:exported="false"
+333-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\d515fa0142795af05e3369fe0848cba8\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+334            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+334-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\d515fa0142795af05e3369fe0848cba8\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+335
+336        <receiver
+336-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:29:9-33:20
+337            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+337-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:30:13-85
+338            android:enabled="true"
+338-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:31:13-35
+339            android:exported="false" >
+339-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:32:13-37
+340        </receiver>
+341        <receiver
+341-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:34:9-42:20
+342            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+342-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:35:13-100
+343            android:enabled="true"
+343-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:36:13-35
+344            android:exported="true"
+344-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:37:13-36
+345            android:permission="android.permission.INSTALL_PACKAGES" >
+345-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:38:13-69
+346            <intent-filter>
+346-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:39:13-41:29
+347                <action android:name="com.android.vending.INSTALL_REFERRER" />
+347-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:40:17-79
+347-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:40:25-76
+348            </intent-filter>
+349        </receiver>
+350
+351        <service
+351-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:44:9-47:40
+352            android:name="com.google.android.gms.measurement.AppMeasurementService"
+352-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:45:13-84
+353            android:enabled="true"
+353-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:46:13-35
+354            android:exported="false" />
+354-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:47:13-37
+355        <service
+355-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:48:9-52:72
+356            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+356-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:49:13-87
+357            android:enabled="true"
+357-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:50:13-35
+358            android:exported="false"
+358-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:51:13-37
+359            android:permission="android.permission.BIND_JOB_SERVICE" />
+359-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\493b977d77656374211b333eaefc270a\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:52:13-69
+360
+361        <provider
+361-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+362            android:name="com.google.firebase.provider.FirebaseInitProvider"
+362-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+363            android:authorities="com.example.dietplanningbuddy.firebaseinitprovider"
+363-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+364            android:exported="false"
+364-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+365            android:initOrder="100" />
+365-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+366
+367        <meta-data
+367-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+368            android:name="com.google.android.gms.version"
+368-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+369            android:value="@integer/google_play_services_version" />
+369-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\SANJU\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+370    </application>
+371
+372</manifest>

@@ -1,0 +1,4 @@
+#Tue Aug 25 21:52:13 BDT 2020
+base.0=G\:\\Spring'20\\CSE491\\DietPlanningBuddy\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

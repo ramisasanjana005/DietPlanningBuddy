@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dietplanningbuddy">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DietPlanningBuddy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".googleSigninActivity" />
+
+        <activity android:name=".SigninupActivity" />
+
+        <activity
+            android:name=".Bmi"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".Calculate"
+            android:parentActivityName="com.example.dietplanningbuddy.Bmi" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.Bmi" />
+        </activity>
+
+
+        <activity
+            android:name=".dietplan"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".underweightPlan"
+            android:parentActivityName="com.example.dietplanningbuddy.dietplan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.dietplan" />
+        </activity>
+
+
+        <activity
+            android:name=".normalweightPlan"
+            android:parentActivityName="com.example.dietplanningbuddy.dietplan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.dietplan" />
+        </activity>
+
+
+        <activity
+            android:name=".overweightPlan"
+            android:parentActivityName="com.example.dietplanningbuddy.dietplan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.dietplan" />
+        </activity>
+
+
+        <activity
+            android:name=".RemindersActivity"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".foodcodescanner"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+        <activity android:name=".d1Underweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+        <activity android:name=".d2Underweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+        <activity android:name=".d3Underweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+        <activity android:name=".d4Underweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d5Underweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d6Underweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+        <activity android:name=".d7Underweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+        <activity android:name=".d1Normalweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d2Normalweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+        <activity android:name=".d3Normalweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+        <activity android:name=".d4Normalweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+        <activity android:name=".d5Normalweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+        <activity android:name=".d6Normalweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d7Normalweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d1Overweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d2Overweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d3Overweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d4Overweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d5Overweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".d6Overweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+        <activity android:name=".d7Overweight"
+            android:parentActivityName="com.example.dietplanningbuddy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dietplanningbuddy.MainActivity" />
+        </activity>
+
+        <activity android:name=".ReaderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".GeneratorActivity"></activity>
+
+        <activity android:name=".searchRecipes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+</manifest>

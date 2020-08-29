@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1090376729182",
+    "firebase_url": "https://dietplanningbuddy.firebaseio.com",
+    "project_id": "dietplanningbuddy",
+    "storage_bucket": "dietplanningbuddy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090376729182:android:a84b421dc3cf5494f06acf",
+        "android_client_info": {
+          "package_name": "com.example.dietplanningbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090376729182-h0ritp497vl1itcs28jomr2h8vssrd9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dietplanningbuddy",
+            "certificate_hash": "02b0028730a45a9c3241f66e486338d78bdf6e1f"
+          }
+        },
+        {
+          "client_id": "1090376729182-e02tjohcqp709fh5n3eqcq405bff31dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXnlgiY-iiYZwA7yReOcI4_TbjbhS2DCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090376729182-e02tjohcqp709fh5n3eqcq405bff31dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

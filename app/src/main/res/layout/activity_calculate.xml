@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    >
+
+
+    <TextView
+        android:text="Overweight"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView25"
+        android:layout_alignTop="@+id/textView24"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_alignLeft="@+id/textView22" />
+
+    <TextView
+        android:text="Obese"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28"
+        android:layout_alignTop="@+id/textView27"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_alignLeft="@+id/textView25" />
+
+    <TextView
+        android:text="25.8-27.3"
+        android:textSize="16dp"
+        android:textColor="#8bedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:layout_alignBaseline="@+id/textView23"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_alignLeft="@+id/textView21" />
+
+    <TextView
+        android:text="below 19.1"
+        android:textSize="16dp"
+        android:textColor="#8bedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="140dp"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="140dp" />
+
+    <TextView
+        android:text="Female"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:layout_marginLeft="29dp"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignEnd="@+id/textView21"
+        android:layout_alignRight="@+id/textView21" />
+
+    <TextView
+        android:text="Underweight"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp" />
+
+    <TextView
+        android:text="Normal"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_alignLeft="@+id/textView19" />
+
+    <TextView
+        android:text="Status"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_alignLeft="@+id/textView19" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/button6"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_alignLeft="@+id/textView27" />
+
+    <TextView
+    android:id="@+id/caloreq"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" Daily Calorie Requirement"
+    android:textSize="25sp"
+    android:textColor="#FFFFFF"
+
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/waterreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Water Requirement in Litre"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="19dp"
+        android:layout_alignBaseline="@+id/bmi"
+        android:layout_alignBottom="@+id/bmi"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_marginStart="14dp"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/ans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/caloreq"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/ans3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/waterreq"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Your BMI is  "
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/ans2"
+        android:layout_alignEnd="@+id/textView18"
+        android:layout_marginTop="90dp"
+        android:layout_alignRight="@+id/textView18" />
+
+    <TextView
+        android:text="27.3-32.3"
+        android:textSize="16dp"
+        android:textColor="#8bedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27"
+        android:layout_alignBaseline="@+id/textView26"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15" />
+
+    <TextView
+        android:text="27.8-31.1"
+        android:textSize="16dp"
+        android:textColor="#8bedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView26"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_marginBottom="45dp"
+        android:layout_alignLeft="@+id/textView23" />
+
+    <TextView
+        android:text="19.1-25.8"
+        android:textSize="16dp"
+        android:textColor="#8bedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_alignLeft="@+id/textView18" />
+
+    <TextView
+        android:text="26.4-27.8"
+        android:textSize="16dp"
+        android:textColor="#8bedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView23"
+        android:layout_above="@+id/textView26"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginBottom="26dp"
+        android:layout_alignLeft="@+id/textView20" />
+
+    <TextView
+        android:text="20.7-26.4"
+        android:textSize="16dp"
+        android:textColor="#8bedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:layout_above="@+id/textView23"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginBottom="37dp"
+        android:layout_alignLeft="@+id/textView13" />
+
+    <TextView
+        android:text="below 20.7"
+        android:textSize="16dp"
+        android:textColor="#8bedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_above="@+id/textView22"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginBottom="27dp"
+        android:layout_alignLeft="@+id/textView20" />
+
+    <TextView
+        android:text="Male"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:id="@+id/textView13"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/bmi"
+        android:layout_toLeftOf="@+id/bmi" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView15"
+        android:layout_alignEnd="@+id/bmi"
+        android:layout_alignRight="@+id/bmi"
+        android:layout_marginBottom="29dp"
+        android:text="BMI Chart"
+        android:textColor="#8bedef"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="-8dp"
+        android:onClick="homeView"
+        android:text="Home" />
+</RelativeLayout>
